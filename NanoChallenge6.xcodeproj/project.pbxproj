@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5652B342204F65C200B2739F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B341204F65C200B2739F /* AppDelegate.swift */; };
+		5652B344204F65C200B2739F /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B343204F65C200B2739F /* ContactsViewController.swift */; };
+		5652B347204F65C200B2739F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5652B345204F65C200B2739F /* Main.storyboard */; };
+		5652B349204F65C200B2739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5652B348204F65C200B2739F /* Assets.xcassets */; };
+		5652B34C204F65C300B2739F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5652B34A204F65C300B2739F /* LaunchScreen.storyboard */; };
+		5652B351204F65C300B2739F /* NanoChallenge6 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5652B350204F65C300B2739F /* NanoChallenge6 WatchKit App.app */; };
+		5652B357204F65C300B2739F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5652B355204F65C300B2739F /* Interface.storyboard */; };
+		5652B359204F65C300B2739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5652B358204F65C300B2739F /* Assets.xcassets */; };
+		5652B360204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5652B35F204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5652B365204F65C300B2739F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B364204F65C300B2739F /* InterfaceController.swift */; };
+		5652B367204F65C300B2739F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B366204F65C300B2739F /* ExtensionDelegate.swift */; };
+		5652B369204F65C300B2739F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B368204F65C300B2739F /* NotificationController.swift */; };
+		5652B36B204F65C300B2739F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B36A204F65C300B2739F /* ComplicationController.swift */; };
+		5652B36D204F65C300B2739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5652B36C204F65C300B2739F /* Assets.xcassets */; };
+		5694B1CF2050AF8D0045B311 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1CE2050AF8D0045B311 /* AddContactViewController.swift */; };
+		5694B1D32050BC8B0045B311 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* Person.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5652B352204F65C300B2739F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5652B336204F65C200B2739F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5652B34F204F65C300B2739F;
+			remoteInfo = "NanoChallenge6 WatchKit App";
+		};
+		5652B361204F65C300B2739F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5652B336204F65C200B2739F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5652B35E204F65C300B2739F;
+			remoteInfo = "NanoChallenge6 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5652B375204F65C300B2739F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5652B360204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5652B379204F65C300B2739F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5652B351204F65C300B2739F /* NanoChallenge6 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5652B33E204F65C200B2739F /* NanoChallenge6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5652B341204F65C200B2739F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5652B343204F65C200B2739F /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		5652B346204F65C200B2739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5652B348204F65C200B2739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5652B34B204F65C300B2739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5652B34D204F65C300B2739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5652B350204F65C300B2739F /* NanoChallenge6 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NanoChallenge6 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5652B356204F65C300B2739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5652B358204F65C300B2739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5652B35A204F65C300B2739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5652B35F204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NanoChallenge6 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5652B364204F65C300B2739F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5652B366204F65C300B2739F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5652B368204F65C300B2739F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5652B36A204F65C300B2739F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5652B36C204F65C300B2739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5652B36E204F65C300B2739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5652B36F204F65C300B2739F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5694B1CE2050AF8D0045B311 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		5694B1D22050BC8B0045B311 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5652B33B204F65C200B2739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5652B35C204F65C300B2739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5652B335204F65C200B2739F = {
+			isa = PBXGroup;
+			children = (
+				5694B1D02050BC780045B311 /* Shared */,
+				5652B340204F65C200B2739F /* NanoChallenge6 */,
+				5652B354204F65C300B2739F /* NanoChallenge6 WatchKit App */,
+				5652B363204F65C300B2739F /* NanoChallenge6 WatchKit Extension */,
+				5652B33F204F65C200B2739F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5652B33F204F65C200B2739F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5652B33E204F65C200B2739F /* NanoChallenge6.app */,
+				5652B350204F65C300B2739F /* NanoChallenge6 WatchKit App.app */,
+				5652B35F204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5652B340204F65C200B2739F /* NanoChallenge6 */ = {
+			isa = PBXGroup;
+			children = (
+				5652B341204F65C200B2739F /* AppDelegate.swift */,
+				5652B343204F65C200B2739F /* ContactsViewController.swift */,
+				5652B345204F65C200B2739F /* Main.storyboard */,
+				5652B348204F65C200B2739F /* Assets.xcassets */,
+				5652B34A204F65C300B2739F /* LaunchScreen.storyboard */,
+				5652B34D204F65C300B2739F /* Info.plist */,
+				5694B1CE2050AF8D0045B311 /* AddContactViewController.swift */,
+			);
+			path = NanoChallenge6;
+			sourceTree = "<group>";
+		};
+		5652B354204F65C300B2739F /* NanoChallenge6 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5652B355204F65C300B2739F /* Interface.storyboard */,
+				5652B358204F65C300B2739F /* Assets.xcassets */,
+				5652B35A204F65C300B2739F /* Info.plist */,
+			);
+			path = "NanoChallenge6 WatchKit App";
+			sourceTree = "<group>";
+		};
+		5652B363204F65C300B2739F /* NanoChallenge6 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5652B364204F65C300B2739F /* InterfaceController.swift */,
+				5652B366204F65C300B2739F /* ExtensionDelegate.swift */,
+				5652B368204F65C300B2739F /* NotificationController.swift */,
+				5652B36A204F65C300B2739F /* ComplicationController.swift */,
+				5652B36C204F65C300B2739F /* Assets.xcassets */,
+				5652B36E204F65C300B2739F /* Info.plist */,
+				5652B36F204F65C300B2739F /* PushNotificationPayload.apns */,
+			);
+			path = "NanoChallenge6 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5694B1D02050BC780045B311 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5694B1D12050BC800045B311 /* Model */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5694B1D12050BC800045B311 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5694B1D22050BC8B0045B311 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5652B33D204F65C200B2739F /* NanoChallenge6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5652B37A204F65C300B2739F /* Build configuration list for PBXNativeTarget "NanoChallenge6" */;
+			buildPhases = (
+				5652B33A204F65C200B2739F /* Sources */,
+				5652B33B204F65C200B2739F /* Frameworks */,
+				5652B33C204F65C200B2739F /* Resources */,
+				5652B379204F65C300B2739F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5652B353204F65C300B2739F /* PBXTargetDependency */,
+			);
+			name = NanoChallenge6;
+			productName = NanoChallenge6;
+			productReference = 5652B33E204F65C200B2739F /* NanoChallenge6.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5652B34F204F65C300B2739F /* NanoChallenge6 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5652B376204F65C300B2739F /* Build configuration list for PBXNativeTarget "NanoChallenge6 WatchKit App" */;
+			buildPhases = (
+				5652B34E204F65C300B2739F /* Resources */,
+				5652B375204F65C300B2739F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5652B362204F65C300B2739F /* PBXTargetDependency */,
+			);
+			name = "NanoChallenge6 WatchKit App";
+			productName = "NanoChallenge6 WatchKit App";
+			productReference = 5652B350204F65C300B2739F /* NanoChallenge6 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5652B35E204F65C300B2739F /* NanoChallenge6 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5652B372204F65C300B2739F /* Build configuration list for PBXNativeTarget "NanoChallenge6 WatchKit Extension" */;
+			buildPhases = (
+				5652B35B204F65C300B2739F /* Sources */,
+				5652B35C204F65C300B2739F /* Frameworks */,
+				5652B35D204F65C300B2739F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NanoChallenge6 WatchKit Extension";
+			productName = "NanoChallenge6 WatchKit Extension";
+			productReference = 5652B35F204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5652B336204F65C200B2739F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Charles Ferreira";
+				TargetAttributes = {
+					5652B33D204F65C200B2739F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5652B34F204F65C300B2739F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5652B35E204F65C300B2739F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5652B339204F65C200B2739F /* Build configuration list for PBXProject "NanoChallenge6" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5652B335204F65C200B2739F;
+			productRefGroup = 5652B33F204F65C200B2739F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5652B33D204F65C200B2739F /* NanoChallenge6 */,
+				5652B34F204F65C300B2739F /* NanoChallenge6 WatchKit App */,
+				5652B35E204F65C300B2739F /* NanoChallenge6 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5652B33C204F65C200B2739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5652B34C204F65C300B2739F /* LaunchScreen.storyboard in Resources */,
+				5652B349204F65C200B2739F /* Assets.xcassets in Resources */,
+				5652B347204F65C200B2739F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5652B34E204F65C300B2739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5652B359204F65C300B2739F /* Assets.xcassets in Resources */,
+				5652B357204F65C300B2739F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5652B35D204F65C300B2739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5652B36D204F65C300B2739F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5652B33A204F65C200B2739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5694B1CF2050AF8D0045B311 /* AddContactViewController.swift in Sources */,
+				5652B344204F65C200B2739F /* ContactsViewController.swift in Sources */,
+				5694B1D32050BC8B0045B311 /* Person.swift in Sources */,
+				5652B342204F65C200B2739F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5652B35B204F65C300B2739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5652B369204F65C300B2739F /* NotificationController.swift in Sources */,
+				5652B36B204F65C300B2739F /* ComplicationController.swift in Sources */,
+				5652B367204F65C300B2739F /* ExtensionDelegate.swift in Sources */,
+				5652B365204F65C300B2739F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5652B353204F65C300B2739F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5652B34F204F65C300B2739F /* NanoChallenge6 WatchKit App */;
+			targetProxy = 5652B352204F65C300B2739F /* PBXContainerItemProxy */;
+		};
+		5652B362204F65C300B2739F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5652B35E204F65C300B2739F /* NanoChallenge6 WatchKit Extension */;
+			targetProxy = 5652B361204F65C300B2739F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5652B345204F65C200B2739F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5652B346204F65C200B2739F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5652B34A204F65C300B2739F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5652B34B204F65C300B2739F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5652B355204F65C300B2739F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5652B356204F65C300B2739F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5652B370204F65C300B2739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5652B371204F65C300B2739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5652B373204F65C300B2739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2978C4JMXA;
+				INFOPLIST_FILE = "NanoChallenge6 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.charlesferreira.NanoChallenge6.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		5652B374204F65C300B2739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2978C4JMXA;
+				INFOPLIST_FILE = "NanoChallenge6 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.charlesferreira.NanoChallenge6.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		5652B377204F65C300B2739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2978C4JMXA;
+				IBSC_MODULE = NanoChallenge6_WatchKit_Extension;
+				INFOPLIST_FILE = "NanoChallenge6 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.charlesferreira.NanoChallenge6.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		5652B378204F65C300B2739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2978C4JMXA;
+				IBSC_MODULE = NanoChallenge6_WatchKit_Extension;
+				INFOPLIST_FILE = "NanoChallenge6 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.charlesferreira.NanoChallenge6.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		5652B37B204F65C300B2739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2978C4JMXA;
+				INFOPLIST_FILE = NanoChallenge6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.charlesferreira.NanoChallenge6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5652B37C204F65C300B2739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2978C4JMXA;
+				INFOPLIST_FILE = NanoChallenge6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.charlesferreira.NanoChallenge6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5652B339204F65C200B2739F /* Build configuration list for PBXProject "NanoChallenge6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5652B370204F65C300B2739F /* Debug */,
+				5652B371204F65C300B2739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5652B372204F65C300B2739F /* Build configuration list for PBXNativeTarget "NanoChallenge6 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5652B373204F65C300B2739F /* Debug */,
+				5652B374204F65C300B2739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5652B376204F65C300B2739F /* Build configuration list for PBXNativeTarget "NanoChallenge6 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5652B377204F65C300B2739F /* Debug */,
+				5652B378204F65C300B2739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5652B37A204F65C300B2739F /* Build configuration list for PBXNativeTarget "NanoChallenge6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5652B37B204F65C300B2739F /* Debug */,
+				5652B37C204F65C300B2739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5652B336204F65C200B2739F /* Project object */;
+}
