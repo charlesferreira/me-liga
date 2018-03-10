@@ -17,40 +17,58 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler([.forward, .backward])
     }
     
-    func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        handler(nil)
-    }
-    
-    func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        handler(nil)
-    }
-    
-    func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
-        handler(.showOnLockScreen)
-    }
-    
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
-    }
-    
-    func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        // Call the handler with the timeline entries prior to the given date
-        handler(nil)
-    }
-    
-    func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        // Call the handler with the timeline entries after to the given date
-        handler(nil)
+        guard let template = template(for: complication.family, happiness: 0.9) else { return }
+        
+        let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+        handler(entry)
     }
     
     // MARK: - Placeholder Templates
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        
+        let sampleTemplate = template(for: complication.family)
+        handler(sampleTemplate)
     }
     
+    // MARK: - Meus templates
+    
+    private func circularSmallTemplate(happiness: Float) -> CLKComplicationTemplate {
+        let template = CLKComplicationTemplateCircularSmallRingImage()
+        template.ringStyle = .closed
+        template.fillFraction = happiness
+        template.imageProvider = CLKImageProvider(onePieceImage: #imageLiteral(resourceName: "Complication/Circular"))
+        template.tintColor = tintColor(forHappiness: happiness)
+        return template
+    }
+    
+    private func modularSmallTemplate(happiness: Float) -> CLKComplicationTemplate {
+        let template = CLKComplicationTemplateModularSmallRingImage()
+        template.ringStyle = .closed
+        template.fillFraction = happiness
+        template.imageProvider = CLKImageProvider(onePieceImage: #imageLiteral(resourceName: "Complication/Modular"))
+        template.tintColor = tintColor(forHappiness: happiness)
+        return template
+    }
+    
+    private func template(for family: CLKComplicationFamily, happiness: Float = 0.75) -> CLKComplicationTemplate? {
+        switch family {
+        case .circularSmall:
+            return circularSmallTemplate(happiness: happiness)
+        case .modularSmall:
+            return modularSmallTemplate(happiness: happiness)
+        default:
+            return nil
+        }
+    }
+    
+    private func tintColor(forHappiness happiness: Float) -> UIColor {
+        let r = happiness < 0.5 ? 1 : CGFloat(2 - happiness * 2)
+        let g = happiness > 0.5 ? 1 : CGFloat(happiness * 2)
+        
+        return UIColor(red: r, green: g, blue: 0, alpha: 1)
+    }
 }
