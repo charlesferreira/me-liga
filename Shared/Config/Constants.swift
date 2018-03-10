@@ -14,7 +14,7 @@ struct Constants {
 //        static let `default` = Date.threeDaysAgo
 //        static let bestCase = Date.oneHourAgo
 //        static let worstCase = Date.sevenDaysAgo
-        static var `default`: Date { return Date.now }
+        static var `default`: Date { return Date.tenMinutesAgo }
         static var bestCase: Date { return Date.now }
         static var worstCase: Date { return Date.tenMinutesAgo }
     }

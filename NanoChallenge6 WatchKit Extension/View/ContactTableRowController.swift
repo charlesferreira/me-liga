@@ -21,7 +21,7 @@ class ContactTableRowController: NSObject {
     
     private func updateLayout() {
         contactName.setText(contact?.givenName ?? "")
-//        contactName.setTextColor(Happiness.tintColor(for: Float(contact?.happiness ?? 0)))
+        contactName.setTextColor(Happiness.tintColor(for: Float(contact?.happiness ?? 0)))
         if let happiness = contact?.happiness {
             contactImage.setImage(image(for: happiness))
         }

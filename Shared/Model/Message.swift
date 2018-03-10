@@ -11,6 +11,7 @@ import Foundation
 struct Message {
     
     struct Keys {
-        static let updateContacts = "updateContacts"
+        static let iPhoneDidUpdateContacts = "iPhoneDidUpdateContacts"
+        static let watchAppDidCallContact = "watchAppDidCallContact"
     }
 }

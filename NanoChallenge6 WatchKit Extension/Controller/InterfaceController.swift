@@ -22,9 +22,10 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-        let contact = DataModel.shared.touch(at: rowIndex)
+        let contact = DataModel.shared.contacts[rowIndex]
         if let number = contact.phoneNumber {
             makeAPhoneCall(to: number)
+            notifyIPhoneApp(contactIndex: rowIndex)
         }
     }
     
@@ -46,6 +47,11 @@ class InterfaceController: WKInterfaceController {
         }
         
         CLKComplicationServer.sharedInstance().reloadAllComplications()
+    }
+    
+    private func notifyIPhoneApp(contactIndex: Int) {
+        let message = [Message.Keys.watchAppDidCallContact: contactIndex]
+        WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
     }
 }
 

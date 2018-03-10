@@ -46,6 +46,7 @@ class DataModel {
         persist()
     }
     
+    @discardableResult
     func touch(at index: Int) -> AppContact {
         contacts[index].lastCall = Date.now
         persist()

@@ -29,6 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: WCSessionDelegate {
     
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        guard let contactIndex = message[Message.Keys.watchAppDidCallContact] as? Int else { return }
+        
+        DataModel.shared.touch(at: contactIndex)
+    }
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
     
     func sessionDidBecomeInactive(_ session: WCSession) {}

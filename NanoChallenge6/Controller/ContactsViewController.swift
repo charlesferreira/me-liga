@@ -30,7 +30,7 @@ class ContactsViewController: UIViewController {
     
     private func notifyWatchApp() {
         guard let data = DataModel.shared.encode() else { return }
-        let message = [Message.Keys.updateContacts: data]
+        let message = [Message.Keys.iPhoneDidUpdateContacts: data]
         WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
     }
 }
@@ -38,7 +38,9 @@ class ContactsViewController: UIViewController {
 extension ContactsViewController: DataModelDelegate {
     
     func dataModel(_ dataModel: DataModel, didUpdateContacts contacts: [AppContact]) {
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
         notifyWatchApp()
     }
 }

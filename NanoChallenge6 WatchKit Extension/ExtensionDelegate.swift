@@ -50,7 +50,7 @@ extension ExtensionDelegate: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        guard let contactData = message[Message.Keys.updateContacts] as? Data else { return }
+        guard let contactData = message[Message.Keys.iPhoneDidUpdateContacts] as? Data else { return }
         
         DataModel.shared.decode(data: contactData)
         CLKComplicationServer.sharedInstance().reloadAllComplications()
