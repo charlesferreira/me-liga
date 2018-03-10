@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56411C012051F00A00CF454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56411C002051F00A00CF454D /* Assets.xcassets */; };
+		56411C022051F01200CF454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56411C002051F00A00CF454D /* Assets.xcassets */; };
+		56411C032051F01300CF454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56411C002051F00A00CF454D /* Assets.xcassets */; };
+		56411C052052134E00CF454D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C042052134E00CF454D /* DataModel.swift */; };
+		56411C08205214CB00CF454D /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C07205214CB00CF454D /* UserDefaults.swift */; };
 		5652B342204F65C200B2739F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B341204F65C200B2739F /* AppDelegate.swift */; };
 		5652B344204F65C200B2739F /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B343204F65C200B2739F /* ContactsViewController.swift */; };
 		5652B347204F65C200B2739F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5652B345204F65C200B2739F /* Main.storyboard */; };
@@ -18,11 +23,18 @@
 		5652B360204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5652B35F204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5652B365204F65C300B2739F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B364204F65C300B2739F /* InterfaceController.swift */; };
 		5652B367204F65C300B2739F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B366204F65C300B2739F /* ExtensionDelegate.swift */; };
-		5652B369204F65C300B2739F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B368204F65C300B2739F /* NotificationController.swift */; };
 		5652B36B204F65C300B2739F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B36A204F65C300B2739F /* ComplicationController.swift */; };
 		5652B36D204F65C300B2739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5652B36C204F65C300B2739F /* Assets.xcassets */; };
-		5694B1CF2050AF8D0045B311 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1CE2050AF8D0045B311 /* AddContactViewController.swift */; };
-		5694B1D32050BC8B0045B311 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* Person.swift */; };
+		5668BFBE2052F46C009171EC /* ContactTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFBC2052F40A009171EC /* ContactTableRowController.swift */; };
+		5668BFBF2052F614009171EC /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C042052134E00CF454D /* DataModel.swift */; };
+		5668BFC12052F6E0009171EC /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C07205214CB00CF454D /* UserDefaults.swift */; };
+		5668BFC72053036F009171EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC62053036F009171EC /* Constants.swift */; };
+		5668BFC8205303B8009171EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC62053036F009171EC /* Constants.swift */; };
+		5668BFCA20533772009171EC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC920533772009171EC /* Message.swift */; };
+		5668BFCB20533E67009171EC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC920533772009171EC /* Message.swift */; };
+		5694B1CF2050AF8D0045B311 /* SelectContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */; };
+		5694B1D52051A0390045B311 /* AppContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* AppContact.swift */; };
+		5694B1D72051A5D20045B311 /* AppContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* AppContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +80,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		56411C002051F00A00CF454D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56411C042052134E00CF454D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		56411C07205214CB00CF454D /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		5652B33E204F65C200B2739F /* NanoChallenge6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5652B341204F65C200B2739F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5652B343204F65C200B2739F /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -82,13 +97,15 @@
 		5652B35F204F65C300B2739F /* NanoChallenge6 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NanoChallenge6 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5652B364204F65C300B2739F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		5652B366204F65C300B2739F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		5652B368204F65C300B2739F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5652B36A204F65C300B2739F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		5652B36C204F65C300B2739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5652B36E204F65C300B2739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5652B36F204F65C300B2739F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		5694B1CE2050AF8D0045B311 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
-		5694B1D22050BC8B0045B311 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		5668BFBC2052F40A009171EC /* ContactTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableRowController.swift; sourceTree = "<group>"; };
+		5668BFC62053036F009171EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5668BFC920533772009171EC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectContactViewController.swift; sourceTree = "<group>"; };
+		5694B1D22050BC8B0045B311 /* AppContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56411C062052146500CF454D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56411C07205214CB00CF454D /* UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5652B335204F65C200B2739F = {
 			isa = PBXGroup;
 			children = (
@@ -133,13 +158,11 @@
 		5652B340204F65C200B2739F /* NanoChallenge6 */ = {
 			isa = PBXGroup;
 			children = (
-				5652B341204F65C200B2739F /* AppDelegate.swift */,
-				5652B343204F65C200B2739F /* ContactsViewController.swift */,
-				5652B345204F65C200B2739F /* Main.storyboard */,
+				5694B1D92051A6C70045B311 /* Controller */,
+				5694B1D82051A6C00045B311 /* View */,
 				5652B348204F65C200B2739F /* Assets.xcassets */,
-				5652B34A204F65C300B2739F /* LaunchScreen.storyboard */,
+				5652B341204F65C200B2739F /* AppDelegate.swift */,
 				5652B34D204F65C300B2739F /* Info.plist */,
-				5694B1CE2050AF8D0045B311 /* AddContactViewController.swift */,
 			);
 			path = NanoChallenge6;
 			sourceTree = "<group>";
@@ -147,8 +170,8 @@
 		5652B354204F65C300B2739F /* NanoChallenge6 WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				5652B355204F65C300B2739F /* Interface.storyboard */,
 				5652B358204F65C300B2739F /* Assets.xcassets */,
+				5652B355204F65C300B2739F /* Interface.storyboard */,
 				5652B35A204F65C300B2739F /* Info.plist */,
 			);
 			path = "NanoChallenge6 WatchKit App";
@@ -157,21 +180,48 @@
 		5652B363204F65C300B2739F /* NanoChallenge6 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5652B364204F65C300B2739F /* InterfaceController.swift */,
-				5652B366204F65C300B2739F /* ExtensionDelegate.swift */,
-				5652B368204F65C300B2739F /* NotificationController.swift */,
-				5652B36A204F65C300B2739F /* ComplicationController.swift */,
+				5668BFBB2052F348009171EC /* Controller */,
+				5668BFBA2052F341009171EC /* View */,
 				5652B36C204F65C300B2739F /* Assets.xcassets */,
+				5652B366204F65C300B2739F /* ExtensionDelegate.swift */,
 				5652B36E204F65C300B2739F /* Info.plist */,
 				5652B36F204F65C300B2739F /* PushNotificationPayload.apns */,
 			);
 			path = "NanoChallenge6 WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		5668BFBA2052F341009171EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5668BFBC2052F40A009171EC /* ContactTableRowController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5668BFBB2052F348009171EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5652B36A204F65C300B2739F /* ComplicationController.swift */,
+				5652B364204F65C300B2739F /* InterfaceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5668BFC520530364009171EC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5668BFC62053036F009171EC /* Constants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		5694B1D02050BC780045B311 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5668BFC520530364009171EC /* Config */,
+				56411C062052146500CF454D /* Extensions */,
 				5694B1D12050BC800045B311 /* Model */,
+				56411C002051F00A00CF454D /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -179,9 +229,29 @@
 		5694B1D12050BC800045B311 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5694B1D22050BC8B0045B311 /* Person.swift */,
+				5694B1D22050BC8B0045B311 /* AppContact.swift */,
+				56411C042052134E00CF454D /* DataModel.swift */,
+				5668BFC920533772009171EC /* Message.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5694B1D82051A6C00045B311 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5652B345204F65C200B2739F /* Main.storyboard */,
+				5652B34A204F65C300B2739F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5694B1D92051A6C70045B311 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5652B343204F65C200B2739F /* ContactsViewController.swift */,
+				5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,14 +323,29 @@
 					5652B33D204F65C200B2739F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					5652B34F204F65C300B2739F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					5652B35E204F65C300B2739F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -291,6 +376,7 @@
 			files = (
 				5652B34C204F65C300B2739F /* LaunchScreen.storyboard in Resources */,
 				5652B349204F65C200B2739F /* Assets.xcassets in Resources */,
+				56411C012051F00A00CF454D /* Assets.xcassets in Resources */,
 				5652B347204F65C200B2739F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5652B359204F65C300B2739F /* Assets.xcassets in Resources */,
+				56411C022051F01200CF454D /* Assets.xcassets in Resources */,
 				5652B357204F65C300B2739F /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56411C032051F01300CF454D /* Assets.xcassets in Resources */,
 				5652B36D204F65C300B2739F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,9 +407,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5694B1CF2050AF8D0045B311 /* AddContactViewController.swift in Sources */,
+				56411C052052134E00CF454D /* DataModel.swift in Sources */,
+				5694B1CF2050AF8D0045B311 /* SelectContactViewController.swift in Sources */,
+				56411C08205214CB00CF454D /* UserDefaults.swift in Sources */,
 				5652B344204F65C200B2739F /* ContactsViewController.swift in Sources */,
-				5694B1D32050BC8B0045B311 /* Person.swift in Sources */,
+				5668BFC8205303B8009171EC /* Constants.swift in Sources */,
+				5668BFCB20533E67009171EC /* Message.swift in Sources */,
+				5694B1D52051A0390045B311 /* AppContact.swift in Sources */,
 				5652B342204F65C200B2739F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,10 +422,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5652B369204F65C300B2739F /* NotificationController.swift in Sources */,
+				5668BFBE2052F46C009171EC /* ContactTableRowController.swift in Sources */,
+				5694B1D72051A5D20045B311 /* AppContact.swift in Sources */,
 				5652B36B204F65C300B2739F /* ComplicationController.swift in Sources */,
+				5668BFCA20533772009171EC /* Message.swift in Sources */,
 				5652B367204F65C300B2739F /* ExtensionDelegate.swift in Sources */,
 				5652B365204F65C300B2739F /* InterfaceController.swift in Sources */,
+				5668BFC12052F6E0009171EC /* UserDefaults.swift in Sources */,
+				5668BFBF2052F614009171EC /* DataModel.swift in Sources */,
+				5668BFC72053036F009171EC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

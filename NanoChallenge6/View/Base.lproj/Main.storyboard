@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vod-ha-bLn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2wj-an-M2E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vod-ha-bLn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="HN1-Hj-l5V">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Poq-yg-bBw" kind="relationship" relationship="rootViewController" id="S98-mv-Mzs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wT7-xl-jvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="329"/>
+        </scene>
+        <!--Contatos-->
+        <scene sceneID="g9C-P3-b3S">
+            <objects>
+                <viewController id="Poq-yg-bBw" customClass="ContactsViewController" customModule="NanoChallenge6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o76-Kq-lHm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x9Q-pj-Dws">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" id="2hx-7g-A2d">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2hx-7g-A2d" id="AoC-kD-mxR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Poq-yg-bBw" id="Q7W-8j-rVf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x9Q-pj-Dws" firstAttribute="leading" secondItem="sUg-zV-Dhb" secondAttribute="leading" id="6Ec-Rl-bs7"/>
+                            <constraint firstItem="sUg-zV-Dhb" firstAttribute="bottom" secondItem="x9Q-pj-Dws" secondAttribute="bottom" id="PEy-6i-mwo"/>
+                            <constraint firstItem="sUg-zV-Dhb" firstAttribute="trailing" secondItem="x9Q-pj-Dws" secondAttribute="trailing" id="g3F-S2-wJi"/>
+                            <constraint firstItem="x9Q-pj-Dws" firstAttribute="top" secondItem="sUg-zV-Dhb" secondAttribute="top" id="krI-if-y3L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sUg-zV-Dhb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contatos" id="FCq-eF-DJE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AfW-a1-PKF">
+                            <connections>
+                                <segue destination="DTa-aO-Oe2" kind="presentation" id="VWn-Zh-wMo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="x9Q-pj-Dws" id="aV0-Tk-AC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dva-o7-lx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="329"/>
+        </scene>
+        <!--Adicionar contato-->
+        <scene sceneID="gjM-Mi-kVH">
+            <objects>
+                <viewController id="Q3B-Xc-8nT" customClass="SelectContactViewController" customModule="NanoChallenge6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qvM-kc-NkA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hoe-Ag-96T">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" id="D8E-qA-JEw">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D8E-qA-JEw" id="Pqd-LO-Wcq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q3B-Xc-8nT" id="fCN-CF-WA4"/>
+                                    <outlet property="delegate" destination="Q3B-Xc-8nT" id="Oqb-h6-ORm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hoe-Ag-96T" firstAttribute="leading" secondItem="LkK-D4-ZMM" secondAttribute="leading" id="YiJ-T3-wW5"/>
+                            <constraint firstItem="hoe-Ag-96T" firstAttribute="top" secondItem="LkK-D4-ZMM" secondAttribute="top" id="laZ-N1-fnE"/>
+                            <constraint firstItem="LkK-D4-ZMM" firstAttribute="bottom" secondItem="hoe-Ag-96T" secondAttribute="bottom" id="mlA-fR-P39"/>
+                            <constraint firstItem="LkK-D4-ZMM" firstAttribute="trailing" secondItem="hoe-Ag-96T" secondAttribute="trailing" id="voG-l1-UDd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LkK-D4-ZMM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adicionar contato" id="hWa-wI-whI">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="9I7-ES-rRv">
+                            <connections>
+                                <action selector="cancelTapped:" destination="Q3B-Xc-8nT" id="XV5-9G-872"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hoe-Ag-96T" id="qkR-iy-o3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0b-a0-dHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2129" y="1126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qYu-p3-hDF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DTa-aO-Oe2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3OU-Ue-5lD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q3B-Xc-8nT" kind="relationship" relationship="rootViewController" id="jaZ-ye-ExP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6P-BI-wN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="1126"/>
+        </scene>
+    </scenes>
+</document>
