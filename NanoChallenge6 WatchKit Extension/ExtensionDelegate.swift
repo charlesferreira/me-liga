@@ -10,7 +10,7 @@ import WatchKit
 import WatchConnectivity
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
-
+    
     func applicationDidFinishLaunching() {
         WCSession.default.delegate = self
         WCSession.default.activate()
@@ -43,12 +43,16 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
 extension ExtensionDelegate: WCSessionDelegate {
     
+    var server: CLKComplicationServer {
+        return CLKComplicationServer.sharedInstance()
+    }
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        guard let contactData = message[Message.Keys.newContact] as? Data,
-            let contact = AppContact.decode(data: contactData) else { return }
+        guard let contactData = message[Message.Keys.updateContacts] as? Data else { return }
         
-        DataModel.shared.add(contact)
+        DataModel.shared.decode(data: contactData)
+        CLKComplicationServer.sharedInstance().reloadAllComplications()
     }
 }

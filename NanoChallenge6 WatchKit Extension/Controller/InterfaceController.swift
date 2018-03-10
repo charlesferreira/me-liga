@@ -16,8 +16,23 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
+        setTitle("Contatos")
         DataModel.shared.delegate = self
         loadTableData()
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let contact = DataModel.shared.touch(at: rowIndex)
+        if let number = contact.phoneNumber {
+            makeAPhoneCall(to: number)
+        }
+    }
+    
+    private func makeAPhoneCall(to number: String) {
+        if let url = URL(string: "tel://\(number)") {
+            print("Ligando para:", number)
+            WKExtension.shared().openSystemURL(url)
+        }
     }
     
     private func loadTableData() {
@@ -29,6 +44,8 @@ class InterfaceController: WKInterfaceController {
                 row.contact = contact
             }
         }
+        
+        CLKComplicationServer.sharedInstance().reloadAllComplications()
     }
 }
 

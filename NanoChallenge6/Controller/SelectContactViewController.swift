@@ -47,14 +47,7 @@ class SelectContactViewController: UIViewController {
     
     private func select(contact: AppContact) {
         DataModel.shared.add(contact)
-        sendMessage(with: contact)
         dismiss(animated: true, completion: nil)
-    }
-    
-    private func sendMessage(with contact: AppContact) {
-        guard let data = contact.encode() else { return }
-        let message = [Message.Keys.newContact: data]
-        WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
     }
 }
 

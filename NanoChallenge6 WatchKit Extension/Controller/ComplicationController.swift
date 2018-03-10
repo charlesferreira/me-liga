@@ -20,7 +20,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        guard let template = template(for: complication.family, happiness: 0.9) else { return }
+        guard let happiness = DataModel.shared.averageHappiness,
+            let template = template(for: complication.family, happiness: Float(happiness)) else { return }
         
         let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
         handler(entry)
@@ -41,7 +42,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         template.ringStyle = .closed
         template.fillFraction = happiness
         template.imageProvider = CLKImageProvider(onePieceImage: #imageLiteral(resourceName: "Complication/Circular"))
-        template.tintColor = tintColor(forHappiness: happiness)
+        template.tintColor = Happiness.tintColor(for: happiness)
         return template
     }
     
@@ -50,7 +51,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         template.ringStyle = .closed
         template.fillFraction = happiness
         template.imageProvider = CLKImageProvider(onePieceImage: #imageLiteral(resourceName: "Complication/Modular"))
-        template.tintColor = tintColor(forHappiness: happiness)
+        template.tintColor = Happiness.tintColor(for: happiness)
         return template
     }
     
@@ -63,12 +64,5 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         default:
             return nil
         }
-    }
-    
-    private func tintColor(forHappiness happiness: Float) -> UIColor {
-        let r = happiness < 0.5 ? 1 : CGFloat(2 - happiness * 2)
-        let g = happiness > 0.5 ? 1 : CGFloat(happiness * 2)
-        
-        return UIColor(red: r, green: g, blue: 0, alpha: 1)
     }
 }

@@ -13,22 +13,22 @@ struct AppContact: Codable {
     var givenName: String
     var familyName: String
     var phoneNumber: String?
+    var lastCall: Date
+    
+    var imageName: String? = nil
     
     var fullName: String {
         return [givenName, familyName].filter { !$0.isEmpty }.joined(separator: " ")
     }
     
+    var happiness: Double {
+        return Happiness.calculate(lastCall: lastCall)
+    }
+    
     init(contact: CNContact) {
         givenName = contact.givenName
         familyName = contact.familyName
-        phoneNumber = contact.phoneNumbers.first?.value.stringValue
-    }
-    
-    static func decode(data: Data) -> AppContact? {
-        return try? PropertyListDecoder().decode(AppContact.self, from: data)
-    }
-    
-    func encode() -> Data? {
-        return try? PropertyListEncoder().encode(self)
+        phoneNumber = contact.phoneNumbers.first?.value.stringValue.digits
+        lastCall = Constants.LastCall.default
     }
 }

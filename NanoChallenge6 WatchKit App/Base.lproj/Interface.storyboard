@@ -12,19 +12,19 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NanoChallenge6_WatchKit_App" customModuleProvider="target">
+                <controller alwaysBounce="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NanoChallenge6_WatchKit_App" customModuleProvider="target">
                     <items>
                         <table alignment="left" id="xmV-Yh-9mz">
                             <items>
                                 <tableRow identifier="ContactTableRowController" id="fOQ-ZD-pgg" customClass="ContactTableRowController" customModule="NanoChallenge6_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" spacing="4" id="8rP-TR-bKo">
                                         <items>
-                                            <imageView width="36" height="36" alignment="left" verticalAlignment="center" id="QPv-xu-gvO"/>
                                             <label alignment="left" verticalAlignment="center" text="Charles" id="65g-6S-FmV"/>
+                                            <imageView width="28" height="28" alignment="right" verticalAlignment="center" image="status-happy" id="4dn-rd-sID"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="contactImage" destination="QPv-xu-gvO" id="pJA-qf-DZl"/>
+                                        <outlet property="contactImage" destination="4dn-rd-sID" id="rGp-IK-tGT"/>
                                         <outlet property="contactName" destination="65g-6S-FmV" id="NAR-Xw-Hbo"/>
                                     </connections>
                                 </tableRow>
@@ -39,4 +39,5 @@
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

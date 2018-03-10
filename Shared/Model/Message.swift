@@ -11,6 +11,6 @@ import Foundation
 struct Message {
     
     struct Keys {
-        static let newContact = "newContact"
+        static let updateContacts = "updateContacts"
     }
 }

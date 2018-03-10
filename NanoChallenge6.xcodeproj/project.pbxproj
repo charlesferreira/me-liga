@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56411C012051F00A00CF454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56411C002051F00A00CF454D /* Assets.xcassets */; };
-		56411C022051F01200CF454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56411C002051F00A00CF454D /* Assets.xcassets */; };
-		56411C032051F01300CF454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56411C002051F00A00CF454D /* Assets.xcassets */; };
 		56411C052052134E00CF454D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C042052134E00CF454D /* DataModel.swift */; };
 		56411C08205214CB00CF454D /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C07205214CB00CF454D /* UserDefaults.swift */; };
 		5652B342204F65C200B2739F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B341204F65C200B2739F /* AppDelegate.swift */; };
@@ -25,6 +22,12 @@
 		5652B367204F65C300B2739F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B366204F65C300B2739F /* ExtensionDelegate.swift */; };
 		5652B36B204F65C300B2739F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652B36A204F65C300B2739F /* ComplicationController.swift */; };
 		5652B36D204F65C300B2739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5652B36C204F65C300B2739F /* Assets.xcassets */; };
+		565382EE2054168400432646 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565382ED2054168400432646 /* Date.swift */; };
+		565382F1205419FD00432646 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565382F0205419FD00432646 /* Math.swift */; };
+		565382F220541A8200432646 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565382ED2054168400432646 /* Date.swift */; };
+		565382F420541F3200432646 /* Happiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565382F320541F3200432646 /* Happiness.swift */; };
+		565382F52054209200432646 /* Happiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565382F320541F3200432646 /* Happiness.swift */; };
+		565382F62054209C00432646 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565382F0205419FD00432646 /* Math.swift */; };
 		5668BFBE2052F46C009171EC /* ContactTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFBC2052F40A009171EC /* ContactTableRowController.swift */; };
 		5668BFBF2052F614009171EC /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C042052134E00CF454D /* DataModel.swift */; };
 		5668BFC12052F6E0009171EC /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56411C07205214CB00CF454D /* UserDefaults.swift */; };
@@ -34,7 +37,10 @@
 		5668BFCB20533E67009171EC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC920533772009171EC /* Message.swift */; };
 		5694B1CF2050AF8D0045B311 /* SelectContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */; };
 		5694B1D52051A0390045B311 /* AppContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* AppContact.swift */; };
-		5694B1D72051A5D20045B311 /* AppContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* AppContact.swift */; };
+		56B49FF8205446E7008E0120 /* CLKComplicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B49FF7205446E7008E0120 /* CLKComplicationServer.swift */; };
+		56B49FFA20546AA6008E0120 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B49FF920546AA6008E0120 /* String.swift */; };
+		56B49FFB20546B1A008E0120 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B49FF920546AA6008E0120 /* String.swift */; };
+		56B49FFC2054731A008E0120 /* AppContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* AppContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +86,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		56411C002051F00A00CF454D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56411C042052134E00CF454D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		56411C07205214CB00CF454D /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		5652B33E204F65C200B2739F /* NanoChallenge6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,11 +106,16 @@
 		5652B36C204F65C300B2739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5652B36E204F65C300B2739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5652B36F204F65C300B2739F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		565382ED2054168400432646 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		565382F0205419FD00432646 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		565382F320541F3200432646 /* Happiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happiness.swift; sourceTree = "<group>"; };
 		5668BFBC2052F40A009171EC /* ContactTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableRowController.swift; sourceTree = "<group>"; };
 		5668BFC62053036F009171EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5668BFC920533772009171EC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectContactViewController.swift; sourceTree = "<group>"; };
 		5694B1D22050BC8B0045B311 /* AppContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContact.swift; sourceTree = "<group>"; };
+		56B49FF7205446E7008E0120 /* CLKComplicationServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLKComplicationServer.swift; sourceTree = "<group>"; };
+		56B49FF920546AA6008E0120 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +139,9 @@
 		56411C062052146500CF454D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				565382ED2054168400432646 /* Date.swift */,
 				56411C07205214CB00CF454D /* UserDefaults.swift */,
+				56B49FF920546AA6008E0120 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -181,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				5668BFBB2052F348009171EC /* Controller */,
+				56B49FF6205446D3008E0120 /* Extensions */,
 				5668BFBA2052F341009171EC /* View */,
 				5652B36C204F65C300B2739F /* Assets.xcassets */,
 				5652B366204F65C300B2739F /* ExtensionDelegate.swift */,
@@ -188,6 +201,14 @@
 				5652B36F204F65C300B2739F /* PushNotificationPayload.apns */,
 			);
 			path = "NanoChallenge6 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		565382EF205419E000432646 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				565382F0205419FD00432646 /* Math.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		5668BFBA2052F341009171EC /* View */ = {
@@ -221,7 +242,7 @@
 				5668BFC520530364009171EC /* Config */,
 				56411C062052146500CF454D /* Extensions */,
 				5694B1D12050BC800045B311 /* Model */,
-				56411C002051F00A00CF454D /* Assets.xcassets */,
+				565382EF205419E000432646 /* Util */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -232,6 +253,7 @@
 				5694B1D22050BC8B0045B311 /* AppContact.swift */,
 				56411C042052134E00CF454D /* DataModel.swift */,
 				5668BFC920533772009171EC /* Message.swift */,
+				565382F320541F3200432646 /* Happiness.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +274,14 @@
 				5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		56B49FF6205446D3008E0120 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56B49FF7205446E7008E0120 /* CLKComplicationServer.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,7 +406,6 @@
 			files = (
 				5652B34C204F65C300B2739F /* LaunchScreen.storyboard in Resources */,
 				5652B349204F65C200B2739F /* Assets.xcassets in Resources */,
-				56411C012051F00A00CF454D /* Assets.xcassets in Resources */,
 				5652B347204F65C200B2739F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5652B359204F65C300B2739F /* Assets.xcassets in Resources */,
-				56411C022051F01200CF454D /* Assets.xcassets in Resources */,
 				5652B357204F65C300B2739F /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +423,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56411C032051F01300CF454D /* Assets.xcassets in Resources */,
 				5652B36D204F65C300B2739F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,12 +436,16 @@
 			files = (
 				56411C052052134E00CF454D /* DataModel.swift in Sources */,
 				5694B1CF2050AF8D0045B311 /* SelectContactViewController.swift in Sources */,
+				565382F420541F3200432646 /* Happiness.swift in Sources */,
 				56411C08205214CB00CF454D /* UserDefaults.swift in Sources */,
 				5652B344204F65C200B2739F /* ContactsViewController.swift in Sources */,
 				5668BFC8205303B8009171EC /* Constants.swift in Sources */,
+				56B49FFB20546B1A008E0120 /* String.swift in Sources */,
 				5668BFCB20533E67009171EC /* Message.swift in Sources */,
 				5694B1D52051A0390045B311 /* AppContact.swift in Sources */,
+				565382EE2054168400432646 /* Date.swift in Sources */,
 				5652B342204F65C200B2739F /* AppDelegate.swift in Sources */,
+				565382F1205419FD00432646 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,14 +454,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5668BFBE2052F46C009171EC /* ContactTableRowController.swift in Sources */,
-				5694B1D72051A5D20045B311 /* AppContact.swift in Sources */,
+				565382F220541A8200432646 /* Date.swift in Sources */,
+				565382F52054209200432646 /* Happiness.swift in Sources */,
+				56B49FF8205446E7008E0120 /* CLKComplicationServer.swift in Sources */,
+				56B49FFA20546AA6008E0120 /* String.swift in Sources */,
 				5652B36B204F65C300B2739F /* ComplicationController.swift in Sources */,
 				5668BFCA20533772009171EC /* Message.swift in Sources */,
 				5652B367204F65C300B2739F /* ExtensionDelegate.swift in Sources */,
 				5652B365204F65C300B2739F /* InterfaceController.swift in Sources */,
 				5668BFC12052F6E0009171EC /* UserDefaults.swift in Sources */,
+				56B49FFC2054731A008E0120 /* AppContact.swift in Sources */,
 				5668BFBF2052F614009171EC /* DataModel.swift in Sources */,
 				5668BFC72053036F009171EC /* Constants.swift in Sources */,
+				565382F62054209C00432646 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

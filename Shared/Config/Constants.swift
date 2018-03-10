@@ -10,4 +10,12 @@ import Foundation
 
 struct Constants {
     
+    struct LastCall {
+//        static let `default` = Date.threeDaysAgo
+//        static let bestCase = Date.oneHourAgo
+//        static let worstCase = Date.sevenDaysAgo
+        static var `default`: Date { return Date.now }
+        static var bestCase: Date { return Date.now }
+        static var worstCase: Date { return Date.tenMinutesAgo }
+    }
 }
