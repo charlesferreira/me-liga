@@ -16,7 +16,7 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
-        setTitle("Contatos")
+        setTitle("Me Liga!")
         DataModel.shared.delegate = self
         loadTableData()
     }

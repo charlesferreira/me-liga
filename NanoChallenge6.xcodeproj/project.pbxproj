@@ -35,6 +35,7 @@
 		5668BFC8205303B8009171EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC62053036F009171EC /* Constants.swift */; };
 		5668BFCA20533772009171EC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC920533772009171EC /* Message.swift */; };
 		5668BFCB20533E67009171EC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668BFC920533772009171EC /* Message.swift */; };
+		568E3A8520560E8500C590C8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E3A8420560E8500C590C8 /* BaseViewController.swift */; };
 		5694B1CF2050AF8D0045B311 /* SelectContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */; };
 		5694B1D52051A0390045B311 /* AppContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694B1D22050BC8B0045B311 /* AppContact.swift */; };
 		56B49FF8205446E7008E0120 /* CLKComplicationServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B49FF7205446E7008E0120 /* CLKComplicationServer.swift */; };
@@ -112,6 +113,7 @@
 		5668BFBC2052F40A009171EC /* ContactTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableRowController.swift; sourceTree = "<group>"; };
 		5668BFC62053036F009171EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5668BFC920533772009171EC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		568E3A8420560E8500C590C8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectContactViewController.swift; sourceTree = "<group>"; };
 		5694B1D22050BC8B0045B311 /* AppContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContact.swift; sourceTree = "<group>"; };
 		56B49FF7205446E7008E0120 /* CLKComplicationServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLKComplicationServer.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			children = (
 				5652B343204F65C200B2739F /* ContactsViewController.swift */,
 				5694B1CE2050AF8D0045B311 /* SelectContactViewController.swift */,
+				568E3A8420560E8500C590C8 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568E3A8520560E8500C590C8 /* BaseViewController.swift in Sources */,
 				56411C052052134E00CF454D /* DataModel.swift in Sources */,
 				5694B1CF2050AF8D0045B311 /* SelectContactViewController.swift in Sources */,
 				565382F420541F3200432646 /* Happiness.swift in Sources */,

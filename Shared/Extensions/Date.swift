@@ -26,6 +26,10 @@ extension Date {
         return Date(timeIntervalSinceNow: -600)
     }
     
+    static var threeMinutesAgo: Date {
+        return Date(timeIntervalSinceNow: -180)
+    }
+    
     static var now: Date {
         return Date()
     }

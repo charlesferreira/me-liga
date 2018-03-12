@@ -9,7 +9,7 @@
 import UIKit
 import WatchConnectivity
 
-class ContactsViewController: UIViewController {
+class ContactsViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,6 +20,18 @@ class ContactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DataModel.shared.delegate = self
+        setupRefreshControl()
+    }
+    
+    private func setupRefreshControl() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+    
+    @objc private func refresh(refreshControl: UIRefreshControl) {
+        tableView.reloadData()
+        refreshControl.endRefreshing()
     }
     
     private func makeAPhoneCall(to number: String) {

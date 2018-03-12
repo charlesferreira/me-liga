@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="239" y="329"/>
         </scene>
-        <!--Contatos-->
+        <!--Me liga!-->
         <scene sceneID="g9C-P3-b3S">
             <objects>
                 <viewController id="Poq-yg-bBw" customClass="ContactsViewController" customModule="NanoChallenge6" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x9Q-pj-Dws">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x9Q-pj-Dws">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -80,7 +80,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sUg-zV-Dhb"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Contatos" id="FCq-eF-DJE">
+                    <navigationItem key="navigationItem" title="Me liga!" id="FCq-eF-DJE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AfW-a1-PKF">
                             <connections>
                                 <segue destination="DTa-aO-Oe2" kind="presentation" id="VWn-Zh-wMo"/>

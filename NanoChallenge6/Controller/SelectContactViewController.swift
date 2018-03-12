@@ -10,7 +10,7 @@ import UIKit
 import Contacts
 import WatchConnectivity
 
-class SelectContactViewController: UIViewController {
+class SelectContactViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
